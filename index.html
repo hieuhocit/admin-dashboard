@@ -5,12 +5,304 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/coupeur-bricoleur" type="text/css" />
     <link rel="stylesheet" href="./style.css">
     <script src="./main.js" defer></script>
 </head>
 
 <body>
+    <div class="container">
+        <div class="sidebar">
+            <h1>
+                <div class="sidebar__icon">
+                    <div class="big"></div>
+                    <div class="small"></div>
+                    <div class="big"></div>
+                    <div class="small"></div>
+                </div> <span>Dashboard</span>
+            </h1>
+            <nav class="menu">
+                <div class="menu__items">
+                    <a href="#" class="menu__item">
+                        <div class="icon__img">
+                            <img src="./icons/home.svg" alt="icon-home">
+                        </div>
+                        <p>Home</p>
+                    </a>
+                    <a href="#" class="menu__item">
+                        <div class="icon__img">
+                            <img src="./icons/profile.svg" alt="icon-profile">
+                        </div>
+                        <p>Profile</p>
+                    </a>
+                    <a href="#" class="menu__item">
+                        <div class="icon__img">
+                            <img src="./icons/message.svg" alt="icon-message">
+                        </div>
+                        <p>Messages</p>
+                    </a>
+                    <a href="#" class="menu__item">
+                        <div class="icon__img">
+                            <img src="./icons/history.svg" alt="icon-history">
+                        </div>
+                        <p>History</p>
+                    </a>
+                    <a href="#" class="menu__item">
+                        <div class="icon__img">
+                            <img src="./icons/task.svg" alt="icon-task">
+                        </div>
+                        <p>Tasks</p>
+                    </a>
+                    <a href="#" class="menu__item">
+                        <div class="icon__img">
+                            <img src="./icons/community.svg" alt="icon-community">
+                        </div>
+                        <p>Communities</p>
+                    </a>
+                </div>
+                <div class="menu__options">
+                    <a href="#" class="menu__item">
+                        <div class="icon__img">
+                            <img src="./icons/setting.svg" alt="icon-setting">
+                        </div>
+                        <p>Setting</p>
+                    </a>
+                    <a href="#" class="menu__item">
+                        <div class="icon__img">
+                            <img src="./icons/support.svg" alt="icon-support">
+                        </div>
+                        <p>Support</p>
+                    </a>
+                    <a href="#" class="menu__item">
+                        <div class="icon__img">
+                            <img src="./icons/privacy.svg" alt="icon-privacy">
+                        </div>
+                        <p>Privacy</p>
+                    </a>
+                </div>
+            </nav>
+        </div>
+        <header class="header">
+            <div class="header__top">
+                <div class="search">
+                    <input type="search" name="search" id="search" placeholder="Search...">
+                    <div class="search__icon"><img src="./icons/search.svg" alt="search-icon"></div>
+                </div>
+                <div class="user-container">
+                    <div class="notify">
+                        <img src="./icons/bell.svg" alt="notify-icon">
+                    </div>
+                    <div class="user-img">
+                        <img src="./images/user.jpg" alt="user-image">
+                    </div>
+                    <div class="user-name">
+                        <p>Trần Trung Hiếu</p>
+                    </div>
+                </div>
+            </div>
+            <div class="header__bottom">
+                <div class="greet">
+                    <div class="user-img">
+                        <img src="./images/user.jpg" alt="user-image">
+                    </div>
+                    <div class="user-name">
+                        <p>Hi there,</p>
+                        <p>Trần Trung Hiếu <span class="tag-name">(@hieuhocit)</span></p>
+                    </div>
+                </div>
+                <div class="features">
+                    <button class="btn new">New</button>
+                    <button class="btn upload">Upload</button>
+                    <button class="btn share">Share</button>
+                </div>
+            </div>
+        </header>
 
+        <main class="main">
+            <div class="projects">
+                <h2>Your projects</h2>
+                <div class="project">
+                    <h3 class="name-project">Sing-up form</h3>
+                    <div class="project-img"><img src="./images/sing-up-form.png" alt="sing-up-form-image"></div>
+                    <p class="description">A Sign-Up Form Mock-Up with Browser-Based Input Validation.</p>
+                    <div class="actions">
+                        <a href="#" class="rate">
+                            <img src="./icons/star-plus.svg" alt="rate-icon">
+                        </a>
+                        <a href="#" class="comment">
+                            <img src="./icons/comment-plus.svg" alt="comment-icon">
+                        </a>
+                        <a href="#" class="share">
+                            <img src="./icons/source-fork.svg" alt="share-icon">
+                        </a>
+                        <a href="https://hieuhocit.github.io/sign-up-form/" target="_blank" class="view">
+                            <img src="./icons/eye.svg" alt="view-icon">
+                        </a>
+                        <a href="https://github.com/hieuhocit/sign-up-form.git" target="_blank" class="github">
+                            <img src="./icons/github.svg" alt="github-icon">
+                        </a>
+                    </div>
+                </div>
+                <div class="project">
+                    <h3 class="name-project">Rock Paper Scissors</h3>
+                    <div class="project-img"><img src="./images/rock-paper-scissors.png"
+                            alt="rock-paper-scissors-image"></div>
+                    <p class="description">A Rock Paper Scissors game.</p>
+                    <div class="actions">
+                        <a href="#" class="rate">
+                            <img src="./icons/star-plus.svg" alt="rate-icon">
+                        </a>
+                        <a href="#" class="comment">
+                            <img src="./icons/comment-plus.svg" alt="comment-icon">
+                        </a>
+                        <a href="#" class="share">
+                            <img src="./icons/source-fork.svg" alt="share-icon">
+                        </a>
+                        <a href="https://hieuhocit.github.io/rock-paper-scissors/" target="_blank" class="view">
+                            <img src="./icons/eye.svg" alt="view-icon">
+                        </a>
+                        <a href="https://github.com/hieuhocit/rock-paper-scissors.git" target="_blank" class="github">
+                            <img src="./icons/github.svg" alt="github-icon">
+                        </a>
+                    </div>
+                </div>
+                <div class="project">
+                    <h3 class="name-project">Etch a Sketch</h3>
+                    <div class="project-img"><img src="./images/etch-a-sketch.png" alt="etch-a-sketch-image"></div>
+                    <p class="description">Etch a Sketch</p>
+                    <div class="actions">
+                        <a href="#" class="rate">
+                            <img src="./icons/star-plus.svg" alt="rate-icon">
+                        </a>
+                        <a href="#" class="comment">
+                            <img src="./icons/comment-plus.svg" alt="comment-icon">
+                        </a>
+                        <a href="#" class="share">
+                            <img src="./icons/source-fork.svg" alt="share-icon">
+                        </a>
+                        <a href="https://hieuhocit.github.io/Etch-a-Sketch/" target="_blank" class="view">
+                            <img src="./icons/eye.svg" alt="view-icon">
+                        </a>
+                        <a href="https://github.com/hieuhocit/Etch-a-Sketch.git" target="_blank" class="github">
+                            <img src="./icons/github.svg" alt="github-icon">
+                        </a>
+                    </div>
+                </div>
+                <div class="project">
+                    <h3 class="name-project">Calculator</h3>
+                    <div class="project-img"><img src="./images/calculator.png" alt="calculator-image"></div>
+                    <p class="description">Calculator</p>
+                    <div class="actions">
+                        <a href="#" class="rate">
+                            <img src="./icons/star-plus.svg" alt="rate-icon">
+                        </a>
+                        <a href="#" class="comment">
+                            <img src="./icons/comment-plus.svg" alt="comment-icon">
+                        </a>
+                        <a href="#" class="share">
+                            <img src="./icons/source-fork.svg" alt="share-icon">
+                        </a>
+                        <a href="https://hieuhocit.github.io/calculator/" target="_blank" class="view">
+                            <img src="./icons/eye.svg" alt="view-icon">
+                        </a>
+                        <a href="https://github.com/hieuhocit/calculator.git" target="_blank" class="github">
+                            <img src="./icons/github.svg" alt="github-icon">
+                        </a>
+                    </div>
+                </div>
+                <div class="project">
+                    <h3 class="name-project">Landing Page</h3>
+                    <div class="project-img"><img src="./images/landing-page.png" alt="landing-page-image"></div>
+                    <p class="description">Landing page.</p>
+                    <div class="actions">
+                        <a href="#" class="rate">
+                            <img src="./icons/star-plus.svg" alt="rate-icon">
+                        </a>
+                        <a href="#" class="comment">
+                            <img src="./icons/comment-plus.svg" alt="comment-icon">
+                        </a>
+                        <a href="#" class="share">
+                            <img src="./icons/source-fork.svg" alt="share-icon">
+                        </a>
+                        <a href="https://hieuhocit.github.io/landing-page/" target="_blank" class="view">
+                            <img src="./icons/eye.svg" alt="view-icon">
+                        </a>
+                        <a href="https://github.com/hieuhocit/landing-page.git" target="_blank" class="github">
+                            <img src="./icons/github.svg" alt="github-icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="announcement-and-trending">
+                <div class="announcement-container">
+                    <h2>Announcements</h2>
+                    <div class="announcement">
+                        <div class="announcement__item">
+                            <h3 class="title">Site Maintenance</h3>
+                            <p class="decription">Nihil, tempora rerum est asperiores fugit voluptatum voluptas sit
+                                molestiae.</p>
+                        </div>
+                        <div class="announcement__item">
+                            <h3 class="title">Community Share Day</h3>
+                            <p class="decription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat magni,
+                                quasi facere pariatur repudiandae omnis illum saepe voluptatem minus blanditiis.</p>
+                        </div>
+                        <div class="announcement__item">
+                            <h3 class="title">Update Privacy Policy</h3>
+                            <p class="decription">Nihil, tempora rerum est asperiores fugit voluptatum voluptas sit
+                                molestiae.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="trending-container">
+                    <h2>Trending</h2>
+                    <div class="trending">
+                        <div class="trending__item">
+                            <div class="user-img">
+                                <img src="./images/user.jpg" alt="user-image">
+                            </div>
+                            <div class="info">
+                                <p class="tag-name">@tegan</p>
+                                <p class="name-project">World Peace Builder</p>
+                            </div>
+                        </div>
+                        <div class="trending__item">
+                            <div class="user-img">
+                                <img src="./images/user.jpg" alt="user-image">
+                            </div>
+                            <div class="info">
+                                <p class="tag-name">@morgan</p>
+                                <p class="name-project">Super Cool Project</p>
+                            </div>
+                        </div>
+                        <div class="trending__item">
+                            <div class="user-img">
+                                <img src="./images/user.jpg" alt="user-image">
+                            </div>
+                            <div class="info">
+                                <p class="tag-name">@kendall</p>
+                                <p class="name-project">Life Changing App</p>
+                            </div>
+                        </div>
+                        <div class="trending__item">
+                            <div class="user-img">
+                                <img src="./images/user.jpg" alt="user-image">
+                            </div>
+                            <div class="info">
+                                <p class="tag-name">@alex</p>
+                                <p class="name-project">No Traffic Maker</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <p>Copyright © hieuhocit<a href="https://github.com/hieuhocit" target="_blank" class="github"><img
+                        src="./icons/github.svg" alt="github-icon"></a></p>
+        </footer>
+    </div>
 </body>
 
 </html>
